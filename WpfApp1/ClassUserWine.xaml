@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.ClassUserWine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ClassUserWine" WindowStartupLocation="CenterScreen" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Picture/set.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button Content="Назад" Background="White" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="61" Click="Button_Click"/>
+
+        <ScrollViewer x:Name="myScrollViewer" Margin="116,29,10,14">
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap" Text="Лучшие страны по производству вина"  Height="22" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="1. Франция" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Родина большинства современных сортов винограда и признанный законодатель мод в виноделии. Несмотря на относительный упадок виноделия во Франции, именно на французские вина равняется большинство мировых производителей. А винодельческие регионы Франции, в числе которых Бордо, долина Луары, Эльзас, Бургундия, Шампань, признаны самыми важными для виноделия в мире. Типичные вина Франции- красные из сортов винограда Каберне-Совиньон, Мерло, Пино-Нуар, Сира, белые из сортов Шардоне, Совиньон Блан. Шардоне и Треббиано, красные из сортов Санджовезе, Неббиоло" FontSize="20" Margin="30,10,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="2. Италия" FontSize="20" FontWeight="Bold" Margin="0,16,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Италия имеет, наверное, самую богатую историю виноделия в мире. А разнообразие вин здесь поражает. Примечательно то, что виноград в Италии, в отличие от любых других стран, выращивается повсеместно. И на севере страны, и даже на Сицилии, на склонах вулканов. Типичные вина Италии- это белые из сортов винограда" FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="3. Испания" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Третья страна в мире по объему производства вина. Входит в большую винодельческую тройку. Испания славится не только прекрасным виноградом, но и всемирно известными винодельческими регионами, в числе которых Риоха, Херес и Наварра. Типичные испанские вина- красные из сорта Мальбек, Сира и Темпранильо." FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="4. Чили" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Чили считается самой перспективной с винодельческой точки зрения страной Нового Света. История производства вина в Чили также довольно богатая, но серьезное виноделие в этой стране зародилось лишь в 21 веке. К тому же виноград в Чили очень устойчив в заболеваниям. Типичные вина Чили- это красные из сортов винограда Карменер, Каберне-Совиньон, Мерло, белые из сортов Шардоне и Совиньон-Блан." FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="5. Австралия" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Австралия занимает почетное четвертое место в списке мировых экспортеров вина и является чуть ли не важнейшим винодельческим регионом Нового Света. Типичные вина Австралии- это красные из сортов винограда Сира, Каберне-Совиньон и белые из сорта Шардоне." FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="6. США" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Речь, в первую очередь, о Калифорнии. Это родина прекрасных, преимущественно красных вин. Типичными винами Калифорнии являются красные из сортов винограда Каберне-Совиньон, Мерло и Зинфандель." FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="7. Новая Зеландия" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Виноделие в Новой Зеландии уникально. Когда-то считалось, что в таком климате, посреди океана невозможно выращивать виноград. А теперь новозеландский Совиньон-Блан признают чуть ли не лучшим в мире. А регион Мальборо- самым уникальным винодельческим регионом мира." FontSize="20" Margin="30,10,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="8. Германия" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Вина из Германии также далеко не везде являются популярными. Например, в России их не очень любят. А зря. Виноделие на территории современной Германии зародилось еще во времена Римской империи. Самые типичные вина Германии- белые из сортов винограда Рислинг и Гевюрцтраминер." FontSize="20" Margin="30,10,0,0" Foreground="White" />
+                <TextBlock TextWrapping="Wrap" Text="9. Австрия" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Вина из этой страны известны далеко не всем. В России их не так много. Но на данный момент вина Австрии считаются одними из наиболее качественных. Все дело в строгом австрийском законодательстве, которое призвано не допустить повторения Австрийского винного скандала. Самое типичное вино Австрии- белое из сорта винограда Грюнер Вельтлинер." FontSize="20" Margin="30,10,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="10. ЮАР" FontSize="20" FontWeight="Bold" Margin="0,15,0,0" Foreground="White"/>
+                <TextBlock TextWrapping="Wrap" Text="Несмотря на то, что вина из этой африканской страны относительно недавно попали на мировой рынок, история виноделия в ЮАР достаточно богата. Вино здесь начали производить аж в 17 веке. Самыми типичными для страны винами являются красные вина из местного сорта винограда Пинотаж" FontSize="20" Margin="30,10,0,0" Foreground="White" />
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

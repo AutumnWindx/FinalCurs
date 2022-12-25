@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp1.Autorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Autorization" WindowStartupLocation="CenterScreen" Height="346" Width="400">
+    <Window.Background>
+        <ImageBrush ImageSource="/Picture/set.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button Content="В главное меню" Name="AutBTN" HorizontalAlignment="Left" Margin="20,21,0,0" VerticalAlignment="Top" 
+                Background="White" Height="21" Width="98"  Foreground="Black" BorderBrush="White" Click="AutBTN_Click"/>
+        <StackPanel Margin="84,72,84,13">
+            <TextBlock Text="Логин" Foreground="White"/>
+            <TextBox Name="LoginTBox"  PreviewKeyDown="TextBox_PreviewKeyDown"/>
+            <TextBlock Text="Пароль" Foreground="White"/>
+            <PasswordBox Name="PasswordPBox" PreviewKeyDown="PassBox_PreviewKeyDown"/>
+            <Button Margin="9"
+                Content="Войти"
+                Name="LogInBtn"
+                Click="LogInBtn_Click" Foreground="Black" Background="White" Width="72"/>
+            <Button Margin="10"
+                Content="Нет аккаунта? Зарегистрироваться"
+                Name="RegBtn"
+                Click="RegBtn_Click" Background="White" Width="211"/>
+        </StackPanel>
+    </Grid>
+</Window>

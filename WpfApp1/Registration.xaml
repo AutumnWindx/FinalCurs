@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Registration" WindowStartupLocation="CenterScreen" Height="450" Width="500">
+    <Window.Background>
+        <ImageBrush ImageSource="/Picture/set.jpg"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel Margin="177,56,10,20">
+            <StackPanel.Background>
+                <ImageBrush/>
+            </StackPanel.Background>
+            <TextBlock Text="Имя" Foreground="White"/>
+            <TextBox Name="FirstTBox" PreviewKeyDown="TextBox_PreviewKeyDown"/>
+            <TextBlock Text="Фамилия" Foreground="White"/>
+            <TextBox Name="SecondTBox" PreviewKeyDown="TextBox_PreviewKeyDown"/>
+            <TextBlock Text="Отчество" Foreground="White"/>
+            <TextBox Name="LastTBox" PreviewKeyDown="TextBox_PreviewKeyDown"/>
+
+            <TextBlock Text="Логин" Foreground="White"/>
+            <TextBox Name="LoginTBox" PreviewKeyDown="PassBox_PreviewKeyDown"/>
+            <TextBlock Text="Пароль" Foreground="White"/>
+            <PasswordBox Name="PasswordPBox" PreviewKeyDown="PassBox_PreviewKeyDown"/>
+
+            <Button Margin="10"
+                Content="Зарегистрироваться"
+                Name="RegBtn"
+                Click="RegBtn_Click" Background="White" Width="144"/>
+        </StackPanel>
+    </Grid>
+</Window>
